@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <header class="fixed w-full">
+    <header class="fixed w-full  z-10">
         <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
             <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                 <a href="#" class="flex items-center">
@@ -154,8 +154,75 @@
                     <p class="mb-8 font-light lg:text-xl">Deliver great service experiences fast - without the
                         complexity of traditional ITSM solutions.</p>
                 </div>
-                <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/feature-1.png"
-                    alt="dashboard feature image">
+
+
+                <div class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl overflow-hidden">
+                    <svg viewBox="0 0 366 729" role="img" class="w-full">
+                        <title>App screenshot</title>
+                        <defs>
+                            <clipPath id="clip-path">
+                                <rect width="316" height="684" rx="36"></rect>
+                            </clipPath>
+                        </defs>
+                        <path fill="#4B5563"
+                            d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z">
+                        </path>
+                        <path fill="#343E4E"
+                            d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z">
+                        </path>
+                        <foreignObject width="316" height="684" transform="translate(24 24)"
+                            clip-path="url(#clip-path)">
+                            <img src="./images/iphone_top.C_RteDVt.png" alt="iPhone Top" class="w-full">
+                            <div class="chat-container flex flex-col bg-gray-900 overflow-hidden shadow-lg"
+                                style="height: calc(100% - 38px)">
+                                <div class="chat-messages flex-1 p-4 overflow-y-auto">
+                                    <div class="flex justify-start my-2">
+                                        <div
+                                            class="message other bg-gray-700 text-white p-3 rounded-t-lg rounded-r-lg max-w-lg w-auto inline-block">
+                                            Hallo Anna! Hier ist Nadine vom Salon. Es ist schon ein paar Monate her,
+                                            dass du hier warst.
+                                            Möchtest du bald wieder vorbeikommen und einen Termin vereinbaren?
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end my-2">
+                                        <div
+                                            class="message user bg-blue-500 text-white p-3 rounded-t-lg rounded-l-lg max-w-lg w-auto inline-block">
+                                            Hallo Nadine! Ja, gerne doch! Ich habe Dienstagabend Zeit.
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-start my-2">
+                                        <div
+                                            class="message other bg-gray-700 text-white p-3 rounded-t-lg rounded-r-lg max-w-lg w-auto inline-block">
+                                            Super. Wir haben einen Platz um 19:30 Uhr mit Susanne frei. Passt das für
+                                            dich?
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end my-2">
+                                        <div
+                                            class="message user bg-blue-500 text-white p-3 rounded-t-lg rounded-l-lg max-w-lg w-auto inline-block">
+                                            Ja, das ist ideal.
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-start my-2">
+                                        <div
+                                            class="message other bg-gray-700 text-white p-3 rounded-t-lg rounded-r-lg max-w-lg w-auto inline-block">
+                                            Fantastisch! Du bist für nächsten Dienstag um 19:30 Uhr eingetragen. Wir
+                                            sehen uns dann!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex p-4 border-t border-gray-700 bg-gray-800 w-full">
+                                    <span
+                                        class="flex-1 flex-grow p-2 border border-gray-600 rounded-full bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500">Nachricht...</span>
+                                    <button
+                                        class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-full focus:outline-none"
+                                        disabled>Senden</button>
+                                </div>
+                            </div>
+                        </foreignObject>
+                    </svg>
+                </div>
+
             </div>
             <!-- Row -->
             <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
@@ -207,7 +274,7 @@
                             <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor"
                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    d="M10x 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd"></path>
                             </svg>
                             <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Limitless
