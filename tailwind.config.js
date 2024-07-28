@@ -16,7 +16,23 @@ module.exports = {
           "800": "#1e40af",
           "900": "#1e3a8a"
         }
-      }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'lexend': ['Lexend', 'sans-serif'],
+      },
+      fontWeight: {
+        'thin': 100,
+        'extralight': 200,
+        'light': 300,
+        'normal': 400,
+        'medium': 500,
+        'semibold': 600,
+        'bold': 700,
+        'extrabold': 800,
+        'black': 900,
+      },
     },
   },
   plugins: [
