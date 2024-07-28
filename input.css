@@ -111,7 +111,7 @@
 }
 
 h1 {
-    @apply font-lexend font-medium text-4xl md:text-5xl lg:text-6xl;
+    @apply font-lexend font-medium text-4xl md:text-5xl;
 }
 
 h2 {
@@ -136,4 +136,12 @@ p {
 
 small {
     @apply font-inter text-sm md:text-base lg:text-lg;
+}
+
+section {
+    @apply pt-10 pb-10;
+}
+
+.apexcharts-yaxis-label {
+    @apply whitespace-pre w-4
 }
