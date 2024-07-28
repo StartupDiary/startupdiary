@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const element = document.getElementById('typewriter');
-    const words = ['Founders.', 'Hustlers.', 'Dreamers.', 'Hackers.'];
+    const words = ['Dreamers.', 'Hustlers.', 'Hackers.', 'Founders.'];
     let currentWord = 0;
     let currentLetter = 0;
     let isDeleting = false;
