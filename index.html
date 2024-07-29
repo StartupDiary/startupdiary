@@ -315,7 +315,7 @@
                             <div class="flex flex-col bg-gray-900 overflow-hidden shadow-lg w-full"
                                 style="height: calc(100% - 38px)">
                                 <div class="flex-1 p-4 overflow-hidden w-full relative " id="default-carousel"
-                                    data-carousel="slide">
+                                    data-carousel-interval="5000" data-carousel="slide">
 
                                     <div class="hidden w-full h-full" data-carousel-item>
                                         Test
@@ -545,50 +545,6 @@
 
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
     <script src="letters.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const carouselElement = document.getElementById('default-carousel');
-
-            const items = [
-                { position: 0, el: document.querySelector('[data-carousel-item]:nth-child(1)') },
-                { position: 1, el: document.querySelector('[data-carousel-item]:nth-child(2)') },
-                { position: 2, el: document.querySelector('[data-carousel-item]:nth-child(3)') },
-            ];
-
-            const options = {
-                defaultPosition: 0,
-                interval: 5000, // Set your desired interval here in milliseconds
-                indicators: {
-                    activeClasses: 'bg-white dark:bg-gray-800',
-                    inactiveClasses: 'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
-                    items: [
-                        { position: 0, el: document.querySelector('[data-carousel-slide-to="0"]') },
-                        { position: 1, el: document.querySelector('[data-carousel-slide-to="1"]') },
-                        { position: 2, el: document.querySelector('[data-carousel-slide-to="2"]') },
-                    ],
-                },
-                onNext: () => {
-                    console.log('next slider item is shown');
-                },
-                onPrev: () => {
-                    console.log('previous slider item is shown');
-                },
-                onChange: () => {
-                    console.log('new slider item has been shown');
-                },
-            };
-
-            const carousel = new Carousel(carouselElement, items, options);
-
-            document.querySelector('[data-carousel-next]').addEventListener('click', () => {
-                carousel.next();
-            });
-
-            document.querySelector('[data-carousel-prev]').addEventListener('click', () => {
-                carousel.prev();
-            });
-        });
-    </script>
 </body>
 
 </html>
