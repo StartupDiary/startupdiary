@@ -64,7 +64,7 @@
                 </a>
                 <div class="flex items-center lg:order-2">
                     <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
-                    <a href="https://themesberg.com/product/tailwind-css/landing-page"
+                    <a href="#mailto:example@example.com"
                         class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">
                         Contact Us</a>
                     <button data-collapse-toggle="mobile-menu-2" type="button"
@@ -99,12 +99,12 @@
                         <li>
                             <a href="#aboutus"
                                 class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                About Us</a>
+                                About us</a>
                         </li>
                         <li>
-                            <a href="#contact"
+                            <a href="imprint.html"
                                 class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                Contact</a>
+                                Imprint</a>
                         </li>
                     </ul>
                 </div>
@@ -159,7 +159,7 @@
                                     x: new Date('2024-01-01').getTime(),
                                     y: 3,
                                     label: {
-                                        offsetY: -10,
+                                        offsetY: 5,
                                         text: ['First Day'],
                                     }
                                 },
@@ -167,7 +167,7 @@
                                     x: new Date('2024-02-01').getTime(),
                                     y: 7,
                                     label: {
-                                        offsetY: -40,
+                                        offsetY: -10,
                                         text: ['Found a', 'tech co-founder']
                                     }
                                 },
@@ -223,7 +223,7 @@
                                     x: new Date('2024-09-01').getTime(),
                                     y: 2,
                                     label: {
-                                        offsetY: -10,
+                                        offsetY: -40,
                                         text: ['Just realized', 'that I am', 'running out of', 'money']
                                     }
                                 },
@@ -317,11 +317,11 @@
                                 <div class="flex-1 p-4 overflow-hidden w-full relative " id="default-carousel"
                                     data-carousel="slide">
 
-                                    <div class="w-full h-full" data-carousel-item>
+                                    <div class="hidden w-full h-full" data-carousel-item>
                                         Test
                                     </div>
 
-                                    <div class="w-full h-full" data-carousel-item>
+                                    <div class="hidden w-full h-full" data-carousel-item>
                                         <div class="flex justify-start my-2">
                                             <div
                                                 class="message other bg-gray-700 text-white p-3 rounded-t-lg rounded-r-lg max-w-lg w-auto inline-block">
@@ -359,7 +359,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="w-full h-full" data-carousel-item>
+                                    <div class="hidden w-full h-full" data-carousel-item>
                                         Test
                                     </div>
 
@@ -518,7 +518,7 @@
                     Contact</h4>
                 <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Feel free to contact us if you're
                     interested.</p>
-                <a href="#"
+                <a href="#mailto:example@example.com"
                     class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">
                     Send a Mail
                 </a>
@@ -531,7 +531,7 @@
     <footer class="bg-white dark:bg-gray-800 pt-10 pb-5">
         <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
             <div class="text-center">
-                <a href="#"
+                <a href="#home"
                     class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
                     <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
                     StartupDiary
@@ -542,8 +542,53 @@
             </div>
         </div>
     </footer>
+
     <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
     <script src="letters.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carouselElement = document.getElementById('default-carousel');
+
+            const items = [
+                { position: 0, el: document.querySelector('[data-carousel-item]:nth-child(1)') },
+                { position: 1, el: document.querySelector('[data-carousel-item]:nth-child(2)') },
+                { position: 2, el: document.querySelector('[data-carousel-item]:nth-child(3)') },
+            ];
+
+            const options = {
+                defaultPosition: 0,
+                interval: 5000, // Set your desired interval here in milliseconds
+                indicators: {
+                    activeClasses: 'bg-white dark:bg-gray-800',
+                    inactiveClasses: 'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
+                    items: [
+                        { position: 0, el: document.querySelector('[data-carousel-slide-to="0"]') },
+                        { position: 1, el: document.querySelector('[data-carousel-slide-to="1"]') },
+                        { position: 2, el: document.querySelector('[data-carousel-slide-to="2"]') },
+                    ],
+                },
+                onNext: () => {
+                    console.log('next slider item is shown');
+                },
+                onPrev: () => {
+                    console.log('previous slider item is shown');
+                },
+                onChange: () => {
+                    console.log('new slider item has been shown');
+                },
+            };
+
+            const carousel = new Carousel(carouselElement, items, options);
+
+            document.querySelector('[data-carousel-next]').addEventListener('click', () => {
+                carousel.next();
+            });
+
+            document.querySelector('[data-carousel-prev]').addEventListener('click', () => {
+                carousel.prev();
+            });
+        });
+    </script>
 </body>
 
 </html>
