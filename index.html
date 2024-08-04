@@ -134,11 +134,10 @@
                 <script>
                     var series = {
                         monthDataSeries1: {
-                            moods: [3, 7, 2, 9, 4, 7, 1, 9, 2, 1, 7, 5],
+                            moods: [3, 7, 2, 9, 4, 7, 1, 6],
                             dates: [
                                 '2024-01-01', '2024-02-01', '2024-03-01', '2024-04-01',
                                 '2024-05-01', '2024-06-01', '2024-07-01', '2024-08-01',
-                                '2024-09-01', '2024-10-01', '2024-11-01', '2024-12-01'
                             ]
                         }
                     };
@@ -213,44 +212,12 @@
                                 },
                                 {
                                     x: new Date('2024-08-01').getTime(),
-                                    y: 9,
+                                    y: 6,
                                     label: {
-                                        offsetY: -10,
+                                        offsetY: -25,
                                         text: ['Started working', 'with the', 'new co-founder']
                                     }
                                 },
-                                {
-                                    x: new Date('2024-09-01').getTime(),
-                                    y: 2,
-                                    label: {
-                                        offsetY: -40,
-                                        text: ['Just realized', 'that I am', 'running out of', 'money']
-                                    }
-                                },
-                                {
-                                    x: new Date('2024-10-01').getTime(),
-                                    y: 1,
-                                    label: {
-                                        offsetY: -10,
-                                        text: ['Credit Card', 'maxed out']
-                                    }
-                                },
-                                {
-                                    x: new Date('2024-11-01').getTime(),
-                                    y: 7,
-                                    label: {
-                                        offsetY: -10,
-                                        text: ['Scored a', 'seed-investment']
-                                    }
-                                },
-                                {
-                                    x: new Date('2024-12-01').getTime(),
-                                    y: 5,
-                                    label: {
-                                        offsetY: -10,
-                                        text: ['Big goals', 'going forward']
-                                    }
-                                }
                             ]
                         },
                         dataLabels: {
@@ -293,8 +260,12 @@
         <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
             <span id="features"> </span>
             <!-- Rows -->
-            <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-
+            <div class="items-center gap-8 grid lg:grid-cols-2 xl:gap-16">
+                <div
+                    class="bg-[url('smartphone.png')] bg-cover bg-center bg-no-repeat mx-auto w-[22.875rem] h-[760px] max-w-full drop-shadow-xl overflow-hidden">
+                    <!-- Inhalt des div, z.B. eine Vorschau -->
+                    Test
+                </div>
                 <div class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl overflow-hidden">
                     <svg viewBox="0 0 366 729" role="img" class="w-full">
                         <title>App screenshot</title>
@@ -509,8 +480,8 @@
                 <!-- Row -->
                 <div class="mx-auto">
                     <ul
-                        class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-12 xl:max-w-none">
-                        <li class="flex flex-col gap-6"><img
+                        class="mx-auto mb-10 lg:mb-0 mt-10 lg:mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-12 xl:max-w-none">
+                        <li class="flex flex-col gap-6 items-center"><img
                                 class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="moritz.jpeg" alt="">
                             <div class="flex-auto">
                                 <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Moritz Hofmann
@@ -519,7 +490,7 @@
                                 <p class="mt-6 text-base leading-7 text-gray-600"></p>
                             </div>
                         </li>
-                        <li class="flex flex-col gap-6"><img
+                        <li class="flex flex-col gap-6 items-center"><img
                                 class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="jan.jpeg" alt="">
                             <div class="flex-auto">
                                 <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Jan Kirchner
