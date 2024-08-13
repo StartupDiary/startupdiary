@@ -123,19 +123,19 @@ h3 {
 }
 
 h4 {
-    @apply font-inter font-medium text-xl md:text-2xl lg:text-3xl;
+    @apply font-inter font-medium text-xl md:text-2xl;
 }
 
 h5 {
-    @apply font-inter font-medium text-lg md:text-xl lg:text-2xl;
+    @apply font-inter font-medium text-lg md:text-xl;
 }
 
 p {
-    @apply font-inter text-base md:text-lg lg:text-xl;
+    @apply font-inter text-base md:text-lg;
 }
 
 small {
-    @apply font-inter text-sm md:text-base lg:text-lg;
+    @apply font-inter text-sm md:text-base;
 }
 
 section {
